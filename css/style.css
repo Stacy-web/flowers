@@ -3,6 +3,7 @@
     src: url('../fonts/GothamPro-Light.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
     src: url('../fonts/GothamPro-Medium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -17,12 +19,18 @@
     src: url('../fonts/GothamPro.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
 }
 
 body {
     background-color: #292929;
     color: #fff;
     font-family: 'Gotham Pro', sans-serif;
+    margin: 0;
 }
 
 .header {
@@ -63,4 +71,168 @@ body {
     display: block;
     margin-top: 16px;
     font-size: 16px;
+}
+
+.hero {
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 77px;
+    border-bottom: 1px solid #4c4c4c;
+}
+
+.hero-title {
+    font-style: 34px;
+    text-transform: uppercase;
+    letter-spacing: .34px;
+    font-family: 'Gotham Pro Medium', sans-serif;
+    line-height: 1.5;
+}
+
+.hero-description {
+    margin-top: 34px;
+    font-family: 'Gotham Pro Light', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .18px;
+    line-height: 1.5;
+}
+
+.flowers-slider {
+    margin-top: 87px;
+    width: 100%;
+}
+
+.hero-cta {
+    text-transform: uppercase;
+    margin-top: 83px;
+}
+
+.hero-cta__title {
+    font-style: 19px;
+    font-family: 'Gotham Pro Light', sans-serif;
+    display: block;
+}
+
+.herro-cta__button {
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #FF3469;
+    padding: 30px 65px 26px 65px;
+    margin-top: 36px;
+    display: inline-block;
+}
+
+.hero {
+    --swiper-navigation-size: 15px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    content: none;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    background-size: contain;
+}
+
+.swiper-button-prev {
+    background-image: url("../img/slider-prev.png");
+}
+
+.swiper-button-next {
+    background-image: url("../img/slider-next.png");
+}
+
+.reviews {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    --swiper-navigation-size: 35px;
+}
+
+.section-title {
+    font-style: 30px;
+    text-transform: uppercase;
+    letter-spacing: .3px;
+    text-align: center;
+}
+
+.reviews-slider {
+    margin-top: 95px;
+}
+
+.review-slide {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.review-image {
+    width: 220px;
+    height: 220px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    font-size: 20px;
+    font-family: 'Gotham Pro Light', sans-serif;
+    position: relative;
+    margin-right: 50px;
+}
+
+.review-image::before {
+    content: "";
+    top: 0; left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+}
+
+.review-image > * {
+    position: relative;
+}
+
+.review-image-1 {
+    background: #000 url(../img/reviews/review-1.jpg) center / contain;
+}
+
+.review-image-2 {
+    background: #000 url(../img/reviews/review-2.jpg) center / contain;
+}
+
+.review-name {
+    font-family: 'Gotham Pro Medium', sans-serif;
+}
+
+.review-city {
+    margin-top: 7px;
+}
+
+.review-text {
+    font-style: 18px;
+    letter-spacing: .18px;
+    line-height: 1.4;
+}
+
+.review-link {
+    color: #FF3469;
+}
+
+.advantages {
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    border-bottom: 1px solid #4c4c4c;
+}
+
+.advantages__wrapper {
+    min-height: 82px;
+    margin-bottom: 30px;
+}
+
+.advantages__title {
+    font-style: 20px;
+    text-transform: uppercase;
+    line-height: 1.4;
+    max-width: 262px;
+    margin: 0 auto;
 }
