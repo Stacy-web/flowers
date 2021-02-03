@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flowers — интернет-магазин цветов</title>
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -17,7 +18,7 @@
                     <div class="header__logo">
                         <div class="logo">
                             <a href="/">
-                                <img class="logo__img" src="img/logo.png" alt="Flowers">
+                                <img class="logo__img" src="img/logo.png" alt="Интернет-магазин цветов">
                             </a>
                         </div>
                     </div>
@@ -43,5 +44,112 @@
             </div>
         </div>
     </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Эксклюзивные цветы и букеты <br>flowers Shop</h1>
+            <p class="hero-description">первая в россии эксклюзивная доставка цветов<br> для людей, которые ценят <b>уникальность</b></p>
+
+            <!-- слайдер в шапке -->
+            <div class="swiper-container flowers-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img class="slide-image" src="img/top-slider/flower-1.png" alt="Роза" /></div>
+                    <div class="swiper-slide"><img class="slide-image" src="img/top-slider/flower-2.png" alt="Лилия" /></div>
+                    <div class="swiper-slide"><img class="slide-image" src="img/top-slider/flower-3.png" alt="Хризантема" /></div>
+                    <div class="swiper-slide"><img class="slide-image" src="img/top-slider/flower-4.png" alt="Сирень" /></div>
+                    <div class="swiper-slide"><img class="slide-image" src="img/top-slider/flower-5.png" alt="Гербера" /></div>
+                    <div class="swiper-slide"><img class="slide-image" src="img/top-slider/flower-6.png" alt="Ирис" /></div>
+                </div>
+
+                <!-- стрелки слайдера -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <!-- ./ слайдер в шапке -->
+
+            <div class="hero-cta">
+                <span class="hero-cta__title">Закажите эксклюзивный букет со <b>скидкой 10%</b></span>
+                <a href="#" class="herro-cta__button">Заказать букет</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="container">
+            <h2 class="section-title">Мы делаем лучшие букеты</h2>
+
+            <!-- слайдер отзывов -->
+            <div class="swiper-container reviews-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide review-slide d-flex align-items-center">
+                        <div class="review-image review-image-1 d-flex flex-column align-items-center justify-content-center">
+                            <span class="review-name">Алиса Иванова</span>
+                            <span class="review-city">г. Ноябрьск</span>
+                        </div>
+                        <div class="review-text">
+                            <p class="review">
+                                Я очень довольна таким отношением к делу. Обслужили просто превосходно,
+                                я заказывала по телефону — так подробно мне всё объяснили, помогли выбрать замечательный букет, и 
+                                привезли всё вовремя, букет был очень красивый, он очень понравился, спасибо вам огромное.
+                            </p>
+
+                            <a class="review-link" href="#">Посмотреть фотографии букета</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide review-slide d-flex align-items-center">
+                        <div class="review-image review-image-2 d-flex flex-column align-items-center justify-content-center">
+                            <span class="review-name">Алиса Иванова</span>
+                            <span class="review-city">г. Ноябрьск</span>
+                        </div>
+                        <div class="review-text">
+                            <p class="review">
+                                Я очень довольна таким отношением к делу. Обслужили просто превосходно,
+                                я заказывала по телефону — так подробно мне всё объяснили, помогли выбрать замечательный букет, и 
+                                привезли всё вовремя, букет был очень красивый, он очень понравился, спасибо вам огромное.
+                            </p>
+
+                            <a class="review-link" href="#">Посмотреть фотографии букета</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- стрелки слайдера -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div> 
+            <!-- ./ слайдер отзывов -->           
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="advantages__wrapper">
+                        <img class="advantages__image" src="img/advantages/adv-1.png" alt="Только прямые поставки цветов из Голландии">
+                    </div>
+                    
+                    <h3 class="advantages__title">Только прямые поставки цветов из&nbsp;Голландии</h3>
+                </div>
+                <div class="col">
+                    <div class="advantages__wrapper">
+                        <img class="advantages__image" src="img/advantages/adv-2.png" alt="Наши флористы имеют 10 летний стаж работы">
+                    </div>
+                   
+                    <h3 class="advantages__title">Наши флористы имеют 10 летний стаж работы</h3>                    
+                </div>
+                <div class="col">
+                    <div class="advantages__wrapper">
+                        <img class="advantages__image" src="img/advantages/adv-3.png" alt="Все цветы вручную отбираются нашими флористами">
+                    </div>
+
+                    <h3 class="advantages__title">Все цветы вручную отбираются нашими флористами</h3>                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>    
+    <script src="js/main.js"></script>
 </body>
 </html>
