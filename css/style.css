@@ -112,7 +112,7 @@ body {
     display: block;
 }
 
-.herro-cta__button {
+.button {
     font-size: 18px;
     text-decoration: none;
     color: #fff;
@@ -120,6 +120,8 @@ body {
     padding: 30px 65px 26px 65px;
     margin-top: 36px;
     display: inline-block;
+    cursor: pointer;
+    border: 0;
 }
 
 .hero {
@@ -235,4 +237,118 @@ body {
     line-height: 1.4;
     max-width: 262px;
     margin: 0 auto;
+}
+
+.goods {
+    padding: 100px 0;
+}
+
+.section-description {
+    font-style: 18px;
+    text-align: center;
+}
+
+.card {
+    text-align: center;
+    border: 2px solid #fff;
+    padding: 33px 35px 30px 35px;
+    margin-top: 27px;
+}
+
+.card__title {
+    margin-top: 23px;
+    text-transform: uppercase;
+}
+
+.card__caption {
+    margin-top: 20px;
+    display: inline-block;
+    font-style: 14px;
+}
+
+.counter-group {
+    margin-top: 7px;
+}
+
+.card__colors {
+    margin-top: 7px; 
+}
+
+.card__color-label {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.card__color-label.white {
+    background-color: #fff;
+}
+
+.card__color-label.biege {
+    background-color: #F7B496;
+}
+
+.card__color-label.pink {
+    background-color: #ED366E;
+}
+
+.card__color-label.red {
+    background-color: #FF0000;
+}
+
+.card__color-label.blue {
+    background-color: #12129D;
+}
+
+.card__color-input {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    z-index: -10;
+}
+
+.counter-input {
+    border: 2px solid #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    background-color: #292929;
+    margin: 0 15px;
+}
+
+.counter-button {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    background-color: transparent;
+    border: 0;
+}
+
+.card__button {
+    font-style: 14px;
+    width: 100%;
+    padding-top: 13px; 
+    padding-bottom: 13px;
+    padding: 16px 10px 13px 10px;
+}
+
+.more {
+    color: #FF3469;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    margin-top: 39px;
+}
+
+.more::after {
+    display: inline-block;
+    margin-left: 14px;
+    content: '';
+    width: 10px;
+    height: 4px;
+    background: url('../img/caret.png') no-repeat top center / contain;
+    vertical-align: middle;
 }
